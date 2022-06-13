@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dark.css" id="theme">
+    <title>Calc</title>
+</head>
+
+
+<body>
+    <main class="calculator">
+
+        <button type="button" class="themeButton"> L </button>
+        <section class="display">
+
+            <input type="text" class="display" name="   result" id="result" placeholder=" Wynik" readonly>
+            <input type="button" class="toogle" value="C" onclick="result.value=''" id="clear-button" />
+        </section>
+        <section class="numbers">
+            <div class="second-row">
+                <input type="button" class="toogle" value="1" onclick="liveScreen(1)" />
+                <input type="button" class="toogle" value="2" onclick="liveScreen(2)" />
+                <input type="button" class="toogle" value="3" onclick="liveScreen(3)" />
+                <input type="button" class="toogle" value="+" onclick="liveScreen('+')" />
+            </div>
+            <div class="third-row">
+                <input type="button" class="toogle" value="4" onclick=" liveScreen(4)" />
+                <input type="button" class="toogle" value="5" onclick=" liveScreen(5)" />
+                <input type="button" class="toogle" value="6" onclick=" liveScreen(6)" />
+                <input type="button" class="toogle" value="-" onclick=" liveScreen('-')" />
+            </div>
+            <div class="fourth-row">
+                <input type="button" class="toogle" value="7" onclick="liveScreen(7)" />
+                <input type="button" class="toogle" value="8" onclick="liveScreen(8)" />
+                <input type="button" class="toogle" value="9" onclick=" liveScreen(9)" />
+                <input type="button" class="toogle" value="x" onclick="liveScreen('*')" />
+            </div>
+            <div class="fifth-row">
+                <input type="button" class="toogle" value="/" onclick="liveScreen('/')" />
+                <input type="button" class="toogle" value="0" onclick="liveScreen(0)" />
+                <input type="button" class="toogle" value="." onclick="liveScreen('.')" />
+                <input type="button" class="toogle" value="=" onclick="calculate(result.value)" />
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
